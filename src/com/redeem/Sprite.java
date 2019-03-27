@@ -65,15 +65,16 @@ public class Sprite {
         if (sY < 55){
             gc.setFill(Color.BLUE);
         }
-        else if (sY < 75){
-            gc.setFill(Color.YELLOWGREEN);
+        else if (sY < 78){
+            gc.setFill(Color.YELLOW);
         }
         else{
             gc.setFill(Color.RED);
         }
         gc.fillRect(sX, 200-sY, 20, sY);
+        gc.setFill(Color.BLACK);
         gc.fillText(month, sX, 170-sY);
-        gc.fillText(""+sY, sX, 190-sY);
+        gc.fillText(" "+sY, sX, 190-sY);
         /* gc.setFill(Color.CORAL);
         gc.fillOval(sX, sY+15*scale, 90*scale, 120*scale);
         gc.setFill(Color.DARKGOLDENROD);

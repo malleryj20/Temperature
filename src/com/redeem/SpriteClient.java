@@ -10,7 +10,7 @@ public class SpriteClient extends Application {
 
     @Override
     public void start(Stage stage) {
-        GraphicsContext gc = JIGraphicsUtility.setUpGraphics(stage, "Sprites", 200, 370);
+        GraphicsContext gc = JIGraphicsUtility.setUpGraphics(stage, "Temperature Chart", 200, 370);
 
         new Sprite(10, 31).draw(gc, "Jan");
         new Sprite(40, 29).draw(gc, "Feb");
